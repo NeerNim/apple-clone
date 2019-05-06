@@ -21,11 +21,8 @@ header{
   background-size: cover;
   min-height: 70%;
   min-width: 1024px;
-   top: 0;
-  left: 0;
   width: 100%;
   height: auto;
-  right: 0;
 }
 .header-content{
     margin: 0 auto;
@@ -134,7 +131,7 @@ nav li a{
   margin: 0 0 0 14px;
 }
 
-.bottom-images li{
+.img-thumbnail{
   float: left;
   width: 25%;
 }
@@ -182,15 +179,18 @@ footer{
   height: 1.5em;
   vertical-align: middle;
 }
-
+.img-thumbnail img{
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) { /* Specific to this particular image */
   header {
     background: url("images/your_verse_hero.jpg")no-repeat 50% 92%;  
     min-height: 500px;    
+   background-size: cover;
   }
   .footer-content-wrapper{
-    width: 100%;
+    width: 75%;
     margin: 0 auto;
     color: #6e6e6e;
   }
@@ -205,5 +205,8 @@ footer{
       font-size: 11px;
       font-weight: 100;  
   }
-
+  main{
+    overflow: hidden;
+    min-width: 1024px
+  }
 }
