@@ -183,23 +183,27 @@ footer{
   width: 100%;
 }
 
-@media screen and (min-width: 768px) { /* Specific to this particular image */
+@media screen and (max-width: 768px) { /* Specific to this particular image */
   header {
     background: url("images/your_verse_hero.jpg")no-repeat 50% 92%;  
     min-height: 500px;    
    background-size: cover;
   }
+  footer{
+    overflow: hidden;
+    min-width: 1024px;
+  }
   .footer-content-wrapper{
-    width: 75%;
+    width: 98%;
     margin: 0 auto;
     color: #6e6e6e;
   }
 
   .footer-content-left{
-    float: left;
+      float: left;
       font-size: 13px;
       font-weight: 100;
-      width: 48%;
+      width: 52%;
   }
   .footer-content-right{
       font-size: 11px;
