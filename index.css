@@ -63,7 +63,7 @@ nav{
 
 nav ul{
   margin: 30px auto;
-  width: 85%;
+  max-width: 898px;
   text-align: center;
   cursor: pointer;
   background: linear-gradient(to bottom, #8b8b8b, #717171 49%, #5e5e5e 50%, #787878);
@@ -123,6 +123,7 @@ nav li a{
 .logo{
   font-size: 19px;
   vertical-align: top;
+  margin: 0 0 0 14px;
 }
 
 .bottom-images li{
