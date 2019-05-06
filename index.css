@@ -1,9 +1,142 @@
 *, *::before, *::after{
   margin: 0;
   padding: 0;  
-  box-sizing: border-box;
+  
 } 
-body{
-  box-sizing: inherit;
+a{
+  text-decoration: none;  
+  color: #08c;
+}
+ul{
+  list-style: none;
 }
 
+body, html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+header{
+  background: url("images/your_verse_hero.jpg")no-repeat 50% 90%;  
+  background-size: cover;
+  min-height: 70%;
+  min-width: 1024px;
+   top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  right: 0;
+}
+nav{
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 5em;
+}
+nav ul{
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #8b8b8b, #717171 49%, #5e5e5e 50%, #787878);
+  border-radius: 5px;
+}
+nav li{
+  display: inline-block;
+  text-align: center;
+  padding: 10px 25px;
+}
+nav input{
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  height: 20px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 1) inset;
+}
+
+nav ul li:first-child::before{
+  border-left:none;
+}
+nav ul li:last-child::after{
+  border-right:none;
+}
+
+nav ul li::before{
+  border-left: 1px solid rgb(89, 89, 89);	
+  	content: "";
+	padding: 10px 25px;
+	margin: 0 -25px;
+	position: relative;
+}
+
+nav ul li::after{
+	border-right: 1px solid rgba(255,255,255,.1);	
+  content: "";
+	padding: 10px 29px;
+	margin: 0 -29px;
+	position: relative;
+}
+
+
+nav li:last-child{
+  border-right:none;
+}
+nav li a{
+  font: bold 12px/100% "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  color: rgb(240, 240, 240);
+  font-size: 13px;
+  font-weight: 100;  
+}
+.search{
+  background: url("images/search.png") no-repeat;
+}
+
+.logo{
+  font-size: 19px;
+  vertical-align: top;
+}
+
+.bottom-images li{
+  float: left;
+}
+main{
+  overflow: hidden;
+}
+footer{
+  overflow: hidden;
+}
+.footer-content-wrapper{
+  width: 75%;
+  margin: 0 auto;
+  color: #6e6e6e;
+}
+.footer-content-left{
+  float: left;
+    font-size: 13px;
+    font-weight: 100;
+    width: 48%;
+}
+.footer-content-right{
+    font-size: 13px;
+    font-weight: 100;  
+}
+.copy{
+  font-size: 13px;
+  font-weight: 100;  
+  margin: 10px 0 30px 0;
+}
+.footer-content-right ul li{
+  display: inline-block;
+}
+.footer-content-right ul li:last-child a{
+  border-right: none;
+}
+.footer-content-right ul li a{
+  border-right: 1px solid darkgray;
+  padding-right: 3px
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  header {
+    background: url("images/your_verse_hero.jpg")no-repeat 50% 90%;  
+    min-height: 100%;
+  }
+}
