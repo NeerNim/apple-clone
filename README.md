@@ -7,6 +7,6 @@ Apple homepage old version clone using css background image and gradients.
 
 ## Live Demos
 
-https://rawcdn.githack.com/NeerNim/apple-clone/794bd25ab02f1c403cde71c93553d7d4abd8902c/index.html
+https://rawcdn.githack.com/NeerNim/apple-clone/af9c5e91c182a7e3f758688c4ee69162e879ee09/index.html
 
 
