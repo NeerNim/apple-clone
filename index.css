@@ -1,0 +1,223 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;  
+} 
+a{
+  color: #08c;
+  text-decoration: none;    
+}
+ul{
+  list-style: none;
+}
+
+body, html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+header{
+  background: url("images/your_verse_hero.jpg")no-repeat 50% 90%;  
+  background-size: cover;
+  height: auto;
+  min-height: 70%;
+  min-width: 1024px;  
+  width: 100%;  
+}
+.header-content{
+    margin: 0 auto;
+    width: 65%;
+  }
+
+h1{
+  background: url("images/title.png") no-repeat;
+  height: 90px;  
+  margin-bottom: 1em;
+}
+h1 a{
+  display: none;  
+}
+
+h2{
+  background: url("images/sub.png") no-repeat;
+  height: 90px;  
+  margin-bottom: 1em;
+}
+h2 a{
+  display: none;
+}
+
+.img-title{
+  display: block;
+  width: 100%;
+}
+.link{
+    border-bottom: 1px solid transparent;
+    display: block;
+    margin: 0 auto;
+    width: 45em;
+}
+.link:hover{
+  border-bottom: 1px solid white;
+}
+
+nav{
+  overflow: hidden;
+}
+
+nav ul{
+  background: linear-gradient(to bottom, #8b8b8b, #717171 49%, #5e5e5e 50%, #787878);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px auto;
+  max-width: 898px;
+  text-align: center;
+}
+nav li{
+  display: inline-block;  
+  padding: 10px 25px;
+  text-align: center;
+}
+nav input{
+  background: transparent;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 1) inset;
+  height: 20px;
+  outline: none;  
+  text-indent: 19%;
+  color: lightgray;
+}
+input:focus{
+  outline: none;
+}
+
+nav ul li:first-child::before{
+  border-left:none;
+}
+nav ul li:last-child::after{
+  border-right:none;
+}
+
+nav ul li::before{
+  border-left: 1px solid rgba(255,255,255,.1);	
+  content: "";
+  margin: 0 -25px;
+	padding: 10px 25px;
+	position: relative;
+}
+
+nav ul li::after{  
+  border-right: 1px solid rgb(89, 89, 89);	
+  content: "";
+	margin: 0 -29px;
+	padding: 10px 29px;
+	position: relative;
+}
+
+
+nav li:last-child{
+  border-right:none;
+}
+nav li a{
+  color: rgb(240, 240, 240);
+  font: bold 12px/100% "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;  
+  font-size: 13px;
+  font-weight: 100;  
+}
+.search{
+  background: url("images/search.png") no-repeat;
+}
+
+.logo{
+  font-size: 19px;
+  margin: 0 0 0 14px;  
+  vertical-align: top;
+
+}
+
+.img-thumbnail{
+  float: left;
+  width: 25%;
+}
+main{
+  overflow: hidden;
+}
+footer{
+  overflow: hidden;
+}
+.footer-content-wrapper{
+  color: #6e6e6e;  
+  margin: 0 auto;  
+  width: 90%;
+}
+
+.logo{
+  background: url("images/logo.png") no-repeat 20%;
+}
+
+.footer-content-left{
+  float: left;
+  font-size: 13px;
+  font-weight: 100;
+  width: 48%;
+}
+.footer-content-right{
+    font-size: 11px;
+    font-weight: 100;  
+}
+.copy{
+  clear: both;  
+  font-size: 13px;
+  font-weight: 100;  
+  margin: 10px 0 30px 0;
+ 
+}
+.footer-content-right ul li{
+  display: inline-block;
+}
+.footer-content-right ul li:last-child a{
+  border-right: none;
+}
+.footer-content-right ul li a{
+  border-right: 1px solid darkgray;
+  padding-right: 3px
+}
+.flag{
+  height: 1.5em;
+  vertical-align: middle;
+}
+.img-thumbnail img{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) { /* Specific to this particular image */
+  header {
+    background: url("images/your_verse_hero.jpg")no-repeat 50% 92%;  
+    background-size: cover;
+    min-height: 500px;       
+  }
+  footer{
+    min-width: 1024px;
+    overflow: hidden;    
+  }
+  .footer-content-wrapper{
+    color: #6e6e6e;
+    margin: 0 auto;
+    width: 98%;
+  }
+
+  .footer-content-left{
+      font-size: 13px;
+      font-weight: 100;
+      float: left;
+      width: 52%;
+  }
+  .footer-content-right{
+      font-size: 11px;
+      font-weight: 100;  
+  }
+  main{
+    min-width: 1024px;
+    overflow: hidden;    
+  }
+}
